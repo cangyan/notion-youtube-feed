@@ -21,6 +21,12 @@ import (
 	"google.golang.org/api/googleapi/transport"
 )
 
+func GoogleDefaultClient() *http.Client {
+	ctx := context.Background()
+	client, _ := google.DefaultClient(ctx)
+	return client
+}
+
 func ApiKeyClient(apiKey string) *http.Client {
 	client := &http.Client{
 		Transport: &transport.APIKey{Key: apiKey},

@@ -27,7 +27,7 @@ func NewService(ak, ci, cs string) Service {
 
 func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 	var data []string
-	service, err := youtube.New(OAuth2Client(s.ClientId, s.ClientSecret))
+	service, err := youtube.New(GoogleDefaultClient())
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
@@ -50,7 +50,7 @@ func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 
 func (s *service) GetChannelVideoList(channelId string) ([]*youtube.PlaylistItem, error) {
 	var data []*youtube.PlaylistItem
-	service, err := youtube.New(OAuth2Client(s.ClientId, s.ClientSecret))
+	service, err := youtube.New(GoogleDefaultClient())
 	if err != nil {
 		log.Fatalf("%v", err)
 	}

@@ -34,6 +34,9 @@ jobs:
 
     - name: Google Cloud login
       run: gcloud auth login --brief --cred-file="${{ steps.google-cloud-auth.outputs.credentials_file_path }}"
+      
+    - name: debug
+      run: echo $GOOGLE_APPLICATION_CREDENTIALS && cat $GOOGLE_APPLICATION_CREDENTIALS
 
     - name: Run
       env:
