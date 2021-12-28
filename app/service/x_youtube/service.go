@@ -15,9 +15,10 @@ type service struct {
 	ApiKey       string
 	ClientId     string
 	ClientSecret string
+	AccessToken  string
 }
 
-func NewService(ak, ci, cs string) Service {
+func NewService(ak, ci, cs, at string) Service {
 	return &service{
 		ApiKey:       ak,
 		ClientId:     ci,
@@ -27,7 +28,7 @@ func NewService(ak, ci, cs string) Service {
 
 func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 	var data []string
-	service, err := youtube.New(GoogleDefaultClient())
+	service, err := youtube.New(AccessTokenClient(s.ApiKey, s.AccessToken))
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
@@ -50,7 +51,7 @@ func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 
 func (s *service) GetChannelVideoList(channelId string) ([]*youtube.PlaylistItem, error) {
 	var data []*youtube.PlaylistItem
-	service, err := youtube.New(GoogleDefaultClient())
+	service, err := youtube.New(AccessTokenClient(s.ApiKey, s.AccessToken))
 	if err != nil {
 		log.Fatalf("%v", err)
 	}

@@ -28,15 +28,10 @@ jobs:
       env:
         YOUTUBE_SERVICE_ACCOUNT: ${{ secrets.YOUTUBE_SERVICE_ACCOUNT }}
       with:
-        create_credentials_file: true
+        token_format: 'access_token'
         workload_identity_provider: 'projects/227114582793/locations/global/workloadIdentityPools/notion-oidc-pool/providers/notion-oidc-pool'
         service_account: ${{ env.YOUTUBE_SERVICE_ACCOUNT }}
-
-    - name: Google Cloud login
-      run: gcloud auth login --brief --cred-file="${{ steps.google-cloud-auth.outputs.credentials_file_path }}"
-      
-    - name: debug
-      run: echo $GOOGLE_APPLICATION_CREDENTIALS && cat $GOOGLE_APPLICATION_CREDENTIALS
+        access_token_scopes: 'https://www.googleapis.com/auth/youtube.readonly'
 
     - name: Run
       env:
@@ -45,4 +40,5 @@ jobs:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
         YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+        YOUTUBE_ACCESS_TOKEN: ${{ steps.google-cloud-auth.outputs.access_token }}
       run: go run ./main.go

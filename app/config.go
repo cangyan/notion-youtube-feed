@@ -6,4 +6,5 @@ type Config struct {
 	YouTubeApiKey       string `json:"you_tube_api_key,omitempty"`
 	YouTubeClientId     string `json:"you_tube_client_id,omitempty"`
 	YouTubeClientSecret string `json:"you_tube_client_secret,omitempty"`
+	YouTubeAccessToken  string `json:"you_tube_access_token,omitempty"`
 }

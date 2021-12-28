@@ -1,6 +1,7 @@
 package app
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/cangyan/notion-youtube-feed/app/service/x_youtube"
@@ -38,12 +39,16 @@ func (c *Container) Config() *Config {
 			panic("YOUTUBE_CLIENT_SECRET not config")
 		}
 
+		youtubeAccessToken := os.Getenv("YOUTUBE_ACCESS_TOKEN")
+		fmt.Println(youtubeAccessToken)
+
 		c.config = &Config{
 			NotionToken:         notionToken,
 			NotionDatabaseId:    notionDatabaseId,
 			YouTubeApiKey:       youtubeApiKey,
 			YouTubeClientId:     youtubeClientId,
 			YouTubeClientSecret: youtubeClientSecret,
+			YouTubeAccessToken:  youtubeAccessToken,
 		}
 	}
 
@@ -52,7 +57,7 @@ func (c *Container) Config() *Config {
 
 func (c *Container) XYouTubeService() x_youtube.Service {
 	if c.xYouTubeService == nil {
-		c.xYouTubeService = x_youtube.NewService(c.Config().YouTubeApiKey, c.Config().YouTubeClientId, c.Config().YouTubeClientSecret)
+		c.xYouTubeService = x_youtube.NewService(c.Config().YouTubeApiKey, c.Config().YouTubeClientId, c.Config().YouTubeClientSecret, c.Config().YouTubeAccessToken)
 	}
 
 	return c.xYouTubeService
