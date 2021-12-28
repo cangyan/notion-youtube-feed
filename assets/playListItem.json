@@ -1,0 +1,440 @@
+{
+    "etag": "jKQ589pBHbGOD56-aiVxYUfK9yU",
+    "items": [
+      {
+        "etag": "r1mwSYeGE98S5h3-uiwpMJghfGY",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LkpUSktOQThFcm9B",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Nestled all snug by the fire, Dash is ready for the holidays and the new year! What better way to settle in and relax than being read a short story about another Dash! Join us as we share it with you, too.\n\nSubscribe to Flutter now! → http://goo.gle/FlutterYT \n\n#Flutter #Developer\n\n\nproduct: Flutter - General; fullname: Andrew Fitz Gibbon;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "publishedAt": "2021-12-23T07:39:27Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "JTJKNA8EroA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/JTJKNA8EroA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/JTJKNA8EroA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/JTJKNA8EroA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/JTJKNA8EroA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/JTJKNA8EroA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Happy Holidays from the Flutter team!"
+        }
+      },
+      {
+        "etag": "qHCQBcys7FJpUAVC561cpvnTr34",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LmtHN2xpYW5FLU5R",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Follow along as Khanh puts together the new MyDash (formerly Dash Fanclub App) *dash*board, troubleshoots an uneven navigation bar with Craig, pelts Fitz with a Dash plushie, and more! \n\nGitHub → https://goo.gle/33Vxk69 \nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nCatch more Learning to Fly videos → https://goo.gle/LearningToFly \nSubscribe to Flutter! → https://goo.gle/FlutterYT \n\n#LearningToFly #Flutter #Developer\n\n\nproduct: Flutter - Development - User interface; fullname: Khanh Nguyen;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 1,
+          "publishedAt": "2021-12-22T07:42:58Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "kG7lianE-NQ"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/kG7lianE-NQ/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/kG7lianE-NQ/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/kG7lianE-NQ/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/kG7lianE-NQ/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/kG7lianE-NQ/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Bringing the *Dash*board to life | Learning to Fly"
+        }
+      },
+      {
+        "etag": "vvyRGJYkOyh4KNcJWQcStyu8c_k",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LkNpNHQtTmtPWTNJ",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Learn more about path_provider → https://goo.gle/3m1iPDF\n\nAre you tired of making users download the same data every time they launch your app, but you don’t want to add the complexity of databases or document storage? Try path_provider, which allows you to find commonly used locations on the filesystem.\n\nThis video is also subtitled in Chinese, Indonesian, Italian, Japanese, Korean, Portuguese, and Spanish.\n\nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nGet more tips! → https://goo.gle/FlutterPackage \nSubscribe to Flutter! → https://goo.gle/FlutterYT\n\n#PackageoftheWeek #Widgets #Flutter\n\n\nproduct: Flutter - Development - User interface; fullname: Craig Labenz;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 2,
+          "publishedAt": "2021-12-14T18:10:27Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Ci4t-NkOY3I"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/Ci4t-NkOY3I/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/Ci4t-NkOY3I/hqdefault.jpg",
+              "width": 480
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Ci4t-NkOY3I/mqdefault.jpg",
+              "width": 320
+            }
+          },
+          "title": "path_provider (Package of the Week)"
+        }
+      },
+      {
+        "etag": "l6qZ9HVCk0YK2nuY-NdgW-F3c6U",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LklPeXEtZVRSaHZv",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Flutter developers are well-acquainted with widget build methods that grow, and grow… and grow. In this video, Craig Labenz compares two different ways to break up those unwieldy build methods; and how the best option may be different than what you originally suspected.\n\nSee the differences in action in these DartPads:\nManaging rebuilds with nested const widgets → https://goo.gle/3yallg1 \nManaging rebuilds with nested non-const widgets → https://goo.gle/3IyafpM \nPreventing errors with separate widgets → https://goo.gle/3dDrR5o \nHelper methods can create a requirement for Keys → https://goo.gle/31HlnQB \n\nGet started with Flutter → http://goo.gle/Flutter\nLearn more about the Dart Language → https://goo.gle/2YF9OCi\n\nWatch more Decoding Flutter episodes → http://goo.gle/DecodingFlutter \nDon’t miss an episode, subscribe to Flutter → http://goo.gle/FlutterYT \n \n#DecodingFlutter #Flutter #Developer\n\n\nproduct: Flutter - Development - User interface;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 3,
+          "publishedAt": "2021-12-09T16:07:44Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "IOyq-eTRhvo"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/IOyq-eTRhvo/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/IOyq-eTRhvo/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/IOyq-eTRhvo/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/IOyq-eTRhvo/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/IOyq-eTRhvo/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Widgets vs helper methods | Decoding Flutter"
+        }
+      },
+      {
+        "etag": "GYHHBpDBS806n55yE_rXKt4aqF0",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LlJhVGhrMGZpcGhB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Learn more about product → https://goo.gle/3oAtlne \n\nTired of writing tedious boilerplate for simple data classes? Try Freezed, a code generation package in Dart that can accelerate your development.\n\nThis video is also subtitled in Chinese, Indonesian, Italian, Japanese, Korean, Portuguese, and Spanish.\n\nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nGet more tips! → https://goo.gle/FlutterPackage \nSubscribe to Flutter! → https://goo.gle/FlutterYT\n\n#PackageoftheWeek #Widgets #Flutter\n\n\nproduct: Flutter - Development - User interface; fullname: Craig Labenz;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 4,
+          "publishedAt": "2021-12-03T16:22:24Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "RaThk0fiphA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/RaThk0fiphA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/RaThk0fiphA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/RaThk0fiphA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/RaThk0fiphA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/RaThk0fiphA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Freezed (Package of the Week)"
+        }
+      },
+      {
+        "etag": "YJL-PhY6v0A28qCDow6I66iqWsc",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LldoVlhrQ0ZQbUs0",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Learn more about GestureDetector → https://goo.gle/3jO0nxv \n\nLooking to track all sorts of user interactions on your app? Try GestureDetector! It can watch clicks 👆🏿, double clicks 👆🏿👆🏿, long clicks, swipes 🧹, drags, and even pinches or zooms 🔍\n\nThis video is also subtitled in Chinese, Indonesian, Italian, Japanese, Korean, Portuguese, and Spanish.\n\nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nGet more tips! → https://goo.gle/FlutterWidget \nSubscribe to Flutter! → https://goo.gle/FlutterYT\n\n#WidgetoftheWeek #Widgets #Flutter\n\n\nproduct: Flutter - Development - User interface; fullname: Khanh Nguyen;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 5,
+          "publishedAt": "2021-11-09T22:46:52Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "WhVXkCFPmK4"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/WhVXkCFPmK4/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/WhVXkCFPmK4/hqdefault.jpg",
+              "width": 480
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/WhVXkCFPmK4/mqdefault.jpg",
+              "width": 320
+            }
+          },
+          "title": "GestureDetector (Widget of the Week)"
+        }
+      },
+      {
+        "etag": "ccaq4TcrH8rthTmfhCQbfZrayHc",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LkxVcURObnZfZGgw",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Learn about nested lists in Flutter, how the shrinkWrap parameter works, and why sometimes Slivers are the best tool for the job.\n\nSee the differences in action on DartPad → https://goo.gle/3oCRRTt \n\nGet started with Flutter → http://goo.gle/Flutter\nLearn more about the Dart Language → https://goo.gle/2YF9OCi\n\nWatch more Decoding Flutter episodes → http://goo.gle/DecodingFlutter \nDon’t miss an episode, subscribe to Flutter → http://goo.gle/FlutterYT \n \n#DecodingFlutter #Flutter #Developer\n\nproduct: Flutter - Development - User interface; fullname: Craig Labenz;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 6,
+          "publishedAt": "2021-11-16T19:37:31Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "LUqDNnv_dh0"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/LUqDNnv_dh0/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/LUqDNnv_dh0/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/LUqDNnv_dh0/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/LUqDNnv_dh0/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/LUqDNnv_dh0/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "ShrinkWrap vs Slivers | Decoding Flutter"
+        }
+      },
+      {
+        "etag": "2urFCbYQpPJ_nvnTBqbcvhHvE0E",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013Li1FR1NuX01BQllv",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "We want to help you make money from your Flutter apps, whether you're targeting iOS or Android. Check out our recent monetization announcements!\n\nBuilding a Flutter app is just the start. With our suite of monetization features, we hope to help you launch a successful business with Flutter too!\n\nChapters:\n0:27 - Introduction\n2:19 - Google Mobile Ads SDK for Flutter\n3:01 - AdMob + Ad Manager\n3:45 - Announcing beta of Ads Mediation \n4:56 - In-App Purchase plugin \n5:09 - Flutter’s Pay plugin\n5:52 - Interview with Petra from Lotum on the 4 Pics 1 Word team\n7:53 - Wrap up\n\nGoogle Mobile Ads for Flutter →  https://goo.gle/3oCrMUO \nMonetize with Flutter →  https://goo.gle/3kEL22q \n\nSubscribe to the Flutter channel → https://goo.gle/FlutterYT \n\nproduct: Flutter - General; fullname: Zoey Fan;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 7,
+          "publishedAt": "2021-11-15T17:55:23Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "-EGSn_MABYo"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/-EGSn_MABYo/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/-EGSn_MABYo/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/-EGSn_MABYo/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/-EGSn_MABYo/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/-EGSn_MABYo/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "​​Flutter Update: App Monetization"
+        }
+      },
+      {
+        "etag": "dQttEvy7zRX4WnudN0EOQMsIjC4",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LkNrY3ZWWlpFc0pF",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Follow along with Khanh’s journey as she builds her first Flutter app. From ideation down to the moments of confusion, learn alongside her as she asks important questions like: “What is the best way to build out a theme? How to approach using fonts?” And more!\n\nChapters:\n0:00 - Introduction\n1:15 - Dash Fan Club App\n1:54 - My dev environment\n2:31 - App skeleton \n4:25 - Q&A with Fitz \n9:20 - Wrap up \n\nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nCatch more Learning to Fly videos → https://goo.gle/LearningToFly\nSubscribe to Flutter! → https://goo.gle/FlutterYT\n\n#LearningToFly #Flutter #Developer\n\n\nproduct: Flutter - Development - User interface; fullname: Andrew Fitz Gibbon, Khanh Nguyen;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 8,
+          "publishedAt": "2021-11-09T16:22:20Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "CkcvVZZEsJE"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/CkcvVZZEsJE/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/CkcvVZZEsJE/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/CkcvVZZEsJE/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/CkcvVZZEsJE/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/CkcvVZZEsJE/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "Building my first Flutter app | Learning to Fly"
+        }
+      },
+      {
+        "etag": "vgzKn0w1cwPIc-X7xooXQFMeawU",
+        "id": "VVV3WGRGZ2VFOUtZemxEZFI3VEc5Y013LmZuSHJfcnNRd0RB",
+        "kind": "youtube#playlistItem",
+        "snippet": {
+          "channelId": "UCwXdFgeE9KYzlDdR7TG9cMw",
+          "channelTitle": "Flutter",
+          "description": "Learn more about CachedNetworkImage → https://goo.gle/3wovaGc \n\nA picture is worth 1,000 words, but is it worth 2,000? Use CachedNetworkImage to stop re-downloading images in your Flutter apps 🌄💙\n\nThis video is also subtitled in Chinese, Indonesian, Italian, Japanese, Korean, Portuguese, and Spanish.\n\nLearn everything about Flutter at → https://goo.gle/2WAhEN1 \n\nGet more tips! → https://goo.gle/FlutterPackage \nSubscribe to Flutter! → https://goo.gle/FlutterYT\n\n#PackageoftheWeek #Widgets #Flutter\n\nproduct: Flutter - Development - User interface; fullname: Khanh Nguyen;",
+          "playlistId": "UUwXdFgeE9KYzlDdR7TG9cMw",
+          "position": 9,
+          "publishedAt": "2021-11-05T16:33:53Z",
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "fnHr_rsQwDA"
+          },
+          "thumbnails": {
+            "default": {
+              "height": 90,
+              "url": "https://i.ytimg.com/vi/fnHr_rsQwDA/default.jpg",
+              "width": 120
+            },
+            "high": {
+              "height": 360,
+              "url": "https://i.ytimg.com/vi/fnHr_rsQwDA/hqdefault.jpg",
+              "width": 480
+            },
+            "maxres": {
+              "height": 720,
+              "url": "https://i.ytimg.com/vi/fnHr_rsQwDA/maxresdefault.jpg",
+              "width": 1280
+            },
+            "medium": {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/fnHr_rsQwDA/mqdefault.jpg",
+              "width": 320
+            },
+            "standard": {
+              "height": 480,
+              "url": "https://i.ytimg.com/vi/fnHr_rsQwDA/sddefault.jpg",
+              "width": 640
+            }
+          },
+          "title": "CachedNetworkImage (Package of the Week)"
+        }
+      }
+    ],
+    "kind": "youtube#playlistItemListResponse",
+    "nextPageToken": "EAAaBlBUOkNBbw",
+    "pageInfo": {
+      "resultsPerPage": 10,
+      "totalResults": 275
+    }
+  }
