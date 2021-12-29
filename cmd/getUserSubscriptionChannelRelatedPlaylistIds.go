@@ -14,7 +14,7 @@ var getUserSubscriptionChannelRelatedPlaylistIdsCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("getPlayListIds called")
 		service := container.XYouTubeService()
-		list, err := service.GetSubscriptionsChannelList()
+		list, err := service.GetChannelPlayListIds()
 		if err != nil {
 			fmt.Println(err)
 			return

@@ -3,12 +3,14 @@ package app
 import (
 	"os"
 
+	"github.com/cangyan/notion-youtube-feed/app/service/notion"
 	"github.com/cangyan/notion-youtube-feed/app/service/x_youtube"
 )
 
 type Container struct {
 	config          *Config
 	xYouTubeService x_youtube.Service
+	notionService   notion.Service
 }
 
 func (c *Container) Config() *Config {
@@ -59,4 +61,12 @@ func (c *Container) XYouTubeService() x_youtube.Service {
 	}
 
 	return c.xYouTubeService
+}
+
+func (c *Container) NotionService() notion.Service {
+	if c.notionService == nil {
+		c.notionService = notion.NewService(c.Config().NotionToken, c.Config().NotionDatabaseId)
+	}
+
+	return c.notionService
 }

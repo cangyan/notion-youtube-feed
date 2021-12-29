@@ -9,7 +9,8 @@ import (
 
 type Service interface {
 	GetSubscriptionsChannelList() ([]string, error)
-	GetChannelPlayListIds(channelId string) ([]string, error)
+	GetChannelPlayListIds() ([]string, error)
+	GetVideoListByPlayListId(playListId string) ([]*youtube.PlaylistItem, error)
 }
 type service struct {
 	ApiKey       string
@@ -50,7 +51,7 @@ func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 	return data, nil
 }
 
-func (s *service) GetChannelPlayListIds(channelId string) ([]string, error) {
+func (s *service) GetChannelPlayListIds() ([]string, error) {
 	var data []string
 	channelIds, err := s.GetSubscriptionsChannelList()
 	if err != nil {
@@ -68,23 +69,32 @@ func (s *service) GetChannelPlayListIds(channelId string) ([]string, error) {
 			log.Fatalf("%v", err)
 		}
 
+		// b, _ := json.Marshal(response)
+		// fmt.Println(string(b))
+
 		if len(response.Items) > 0 {
 			playList := response.Items[0]
 			uploads := playList.ContentDetails.RelatedPlaylists.Uploads
-
 			data = append(data, uploads)
-
-			// call := service.PlaylistItems.List([]string{"snippet"}).PlaylistId(uploads).MaxResults(10)
-			// response, err := call.Do()
-			// if err != nil {
-			// 	log.Fatalf("%v", err)
-			// }
-			// // b, _ := json.Marshal(response)
-			// // fmt.Println(string(b))
-			// return response.Items, nil
 		}
-
 	}
 
 	return data, nil
+}
+
+func (s *service) GetVideoListByPlayListId(playListId string) ([]*youtube.PlaylistItem, error) {
+	var data []*youtube.PlaylistItem
+	service, err := youtube.New(ApiKeyClient(s.ApiKey))
+	if err != nil {
+		return data, err
+	}
+
+	call := service.PlaylistItems.List([]string{"snippet"}).PlaylistId(playListId).MaxResults(10)
+	response, err := call.Do()
+	if err != nil {
+		log.Fatalf("%v", err)
+	}
+	// b, _ := json.Marshal(response)
+	// fmt.Println(string(b))
+	return response.Items, nil
 }

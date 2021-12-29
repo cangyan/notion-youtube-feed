@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/cangyan/notion-youtube-feed/types/filter_object"
+	"github.com/cangyan/notion-youtube-feed/app/service/notion/types/filter_object"
 )
 
 type Service interface {
@@ -19,7 +19,12 @@ type service struct {
 	NotionDatabaseId string
 }
 
-func NewService() Service { return &service{} }
+func NewService(token, databaseId string) Service {
+	return &service{
+		NotionToken:      token,
+		NotionDatabaseId: databaseId,
+	}
+}
 
 func (s *service) FindNotionPageExistedById(ids []string) ([]string, error) {
 	ret := make([]string, 0)
@@ -89,7 +94,8 @@ func (s *service) CreatePage(body string) error {
 		fmt.Println(err)
 		return err
 	}
-	// fmt.Println(string(body))
+
+	// fmt.Println(string(b))
 
 	return nil
 }
