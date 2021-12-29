@@ -21,13 +21,6 @@ import (
 	"google.golang.org/api/googleapi/transport"
 )
 
-func AccessTokenClient(apiKey, accessToken string) *http.Client {
-	client := &http.Client{
-		Transport: &TokenKey{ApiKey: apiKey, AccessToken: accessToken},
-	}
-	return client
-}
-
 func ApiKeyClient(apiKey string) *http.Client {
 	client := &http.Client{
 		Transport: &transport.APIKey{Key: apiKey},

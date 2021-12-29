@@ -1,7 +1,7 @@
 package x_youtube
 
 import (
-	"errors"
+	"fmt"
 	"log"
 
 	"google.golang.org/api/youtube/v3"
@@ -9,26 +9,27 @@ import (
 
 type Service interface {
 	GetSubscriptionsChannelList() ([]string, error)
-	GetChannelVideoList(channelId string) ([]*youtube.PlaylistItem, error)
+	GetChannelPlayListIds(channelId string) ([]string, error)
 }
 type service struct {
 	ApiKey       string
 	ClientId     string
 	ClientSecret string
-	AccessToken  string
+	PlayListIds  string
 }
 
-func NewService(ak, ci, cs, at string) Service {
+func NewService(ak, ci, cs, playListIds string) Service {
 	return &service{
 		ApiKey:       ak,
 		ClientId:     ci,
 		ClientSecret: cs,
+		PlayListIds:  playListIds,
 	}
 }
 
 func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 	var data []string
-	service, err := youtube.New(AccessTokenClient(s.ApiKey, s.AccessToken))
+	service, err := youtube.New(OAuth2Client(s.ClientId, s.ClientSecret))
 	if err != nil {
 		log.Fatalf("%v", err)
 	}
@@ -49,30 +50,41 @@ func (s *service) GetSubscriptionsChannelList() ([]string, error) {
 	return data, nil
 }
 
-func (s *service) GetChannelVideoList(channelId string) ([]*youtube.PlaylistItem, error) {
-	var data []*youtube.PlaylistItem
-	service, err := youtube.New(AccessTokenClient(s.ApiKey, s.AccessToken))
+func (s *service) GetChannelPlayListIds(channelId string) ([]string, error) {
+	var data []string
+	channelIds, err := s.GetSubscriptionsChannelList()
 	if err != nil {
-		log.Fatalf("%v", err)
+		fmt.Println(err)
+		return data, err
 	}
-	call := service.Channels.List([]string{"contentDetails"}).Id(channelId)
-	response, err := call.Do()
+	service, err := youtube.New(OAuth2Client(s.ClientId, s.ClientSecret))
 	if err != nil {
-		log.Fatalf("%v", err)
+		return data, err
 	}
-
-	if len(response.Items) > 0 {
-		playList := response.Items[0]
-		uploads := playList.ContentDetails.RelatedPlaylists.Uploads
-		call := service.PlaylistItems.List([]string{"snippet"}).PlaylistId(uploads).MaxResults(10)
+	for _, channelId := range channelIds {
+		call := service.Channels.List([]string{"contentDetails"}).Id(channelId)
 		response, err := call.Do()
 		if err != nil {
 			log.Fatalf("%v", err)
 		}
-		// b, _ := json.Marshal(response)
-		// fmt.Println(string(b))
-		return response.Items, nil
+
+		if len(response.Items) > 0 {
+			playList := response.Items[0]
+			uploads := playList.ContentDetails.RelatedPlaylists.Uploads
+
+			data = append(data, uploads)
+
+			// call := service.PlaylistItems.List([]string{"snippet"}).PlaylistId(uploads).MaxResults(10)
+			// response, err := call.Do()
+			// if err != nil {
+			// 	log.Fatalf("%v", err)
+			// }
+			// // b, _ := json.Marshal(response)
+			// // fmt.Println(string(b))
+			// return response.Items, nil
+		}
+
 	}
 
-	return data, errors.New("videos not found")
+	return data, nil
 }

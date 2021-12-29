@@ -22,16 +22,16 @@ jobs:
       with:
         go-version: 1.16
 
-    - name: Authenticate to Google Cloud
-      id: 'google-cloud-auth'
-      uses: 'google-github-actions/auth@v0.4.1'
-      env:
-        YOUTUBE_SERVICE_ACCOUNT: ${{ secrets.YOUTUBE_SERVICE_ACCOUNT }}
-      with:
-        token_format: 'access_token'
-        workload_identity_provider: 'projects/227114582793/locations/global/workloadIdentityPools/notion-oidc-pool/providers/notion-oidc-pool'
-        service_account: ${{ env.YOUTUBE_SERVICE_ACCOUNT }}
-        access_token_scopes: 'https://www.googleapis.com/auth/youtube.readonly'
+    # - name: Authenticate to Google Cloud
+    #   id: 'google-cloud-auth'
+    #   uses: 'google-github-actions/auth@v0.4.1'
+    #   env:
+    #     YOUTUBE_SERVICE_ACCOUNT: ${{ secrets.YOUTUBE_SERVICE_ACCOUNT }}
+    #   with:
+    #     token_format: 'access_token'
+    #     workload_identity_provider: 'projects/227114582793/locations/global/workloadIdentityPools/notion-oidc-pool/providers/notion-oidc-pool'
+    #     service_account: ${{ env.YOUTUBE_SERVICE_ACCOUNT }}
+    #     access_token_scopes: 'https://www.googleapis.com/auth/youtube.readonly'
 
     - name: Run
       env:
@@ -40,5 +40,4 @@ jobs:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
         YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-        YOUTUBE_ACCESS_TOKEN: ${{ steps.google-cloud-auth.outputs.access_token }}
       run: go run ./main.go

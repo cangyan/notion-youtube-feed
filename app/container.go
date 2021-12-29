@@ -1,7 +1,6 @@
 package app
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/cangyan/notion-youtube-feed/app/service/x_youtube"
@@ -30,17 +29,16 @@ func (c *Container) Config() *Config {
 		}
 
 		youtubeClientId := os.Getenv("YOUTUBE_CLIENT_ID")
-		if youtubeClientId == "" {
-			panic("YOUTUBE_CLIENT_ID not config")
-		}
+		// if youtubeClientId == "" {
+		// 	panic("YOUTUBE_CLIENT_ID not config")
+		// }
 
 		youtubeClientSecret := os.Getenv("YOUTUBE_CLIENT_SECRET")
-		if youtubeClientSecret == "" {
-			panic("YOUTUBE_CLIENT_SECRET not config")
-		}
+		// if youtubeClientSecret == "" {
+		// 	panic("YOUTUBE_CLIENT_SECRET not config")
+		// }
 
-		youtubeAccessToken := os.Getenv("YOUTUBE_ACCESS_TOKEN")
-		fmt.Println(youtubeAccessToken)
+		youtubePlayListIds := os.Getenv("YOUTUBE_PLAYLIST_IDS")
 
 		c.config = &Config{
 			NotionToken:         notionToken,
@@ -48,7 +46,7 @@ func (c *Container) Config() *Config {
 			YouTubeApiKey:       youtubeApiKey,
 			YouTubeClientId:     youtubeClientId,
 			YouTubeClientSecret: youtubeClientSecret,
-			YouTubeAccessToken:  youtubeAccessToken,
+			YouTubePlayListIds:  youtubePlayListIds,
 		}
 	}
 
@@ -57,7 +55,7 @@ func (c *Container) Config() *Config {
 
 func (c *Container) XYouTubeService() x_youtube.Service {
 	if c.xYouTubeService == nil {
-		c.xYouTubeService = x_youtube.NewService(c.Config().YouTubeApiKey, c.Config().YouTubeClientId, c.Config().YouTubeClientSecret, c.Config().YouTubeAccessToken)
+		c.xYouTubeService = x_youtube.NewService(c.Config().YouTubeApiKey, c.Config().YouTubeClientId, c.Config().YouTubeClientSecret, c.Config().YouTubePlayListIds)
 	}
 
 	return c.xYouTubeService
